@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tolengit.github.io/sitemap.xml
