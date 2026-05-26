@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — Tynys-H</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-enter">
+<nav class="nav">
+  <a class="nav-logo" href="index.html">Tynys<span>-H</span></a>
+  <div class="nav-links">
+    <a href="index.html" data-ru="Главная" data-kz="Басты бет" data-en="Home">Главная</a>
+    <a href="about.html" data-ru="О компании" data-kz="Компания туралы" data-en="About">О компании</a>
+    <a href="research.html" data-ru="Исследования" data-kz="Зерттеулер" data-en="Research">Исследования</a>
+    <a href="projects.html" data-ru="Проекты" data-kz="Жобалар" data-en="Projects">Проекты</a>
+    <a href="publications.html" data-ru="Публикации" data-kz="Жарияланымдар" data-en="Publications">Публикации</a>
+    <a href="news.html" data-ru="Новости" data-kz="Жаңалықтар" data-en="News">Новости</a>
+    <a href="contact.html" data-ru="Контакты" data-kz="Байланыс" data-en="Contact">Контакты</a>
+  </div>
+  <div class="nav-right">
+    <div class="lang-switcher">
+      <button class="lang-btn" data-lang="ru">RU</button>
+      <button class="lang-btn" data-lang="kz">KZ</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <a class="nav-cta" href="contact.html" data-ru="Написать нам" data-kz="Бізге жазу" data-en="Contact Us">Написать нам</a>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="badge fade-up"><i class="ti ti-mail"></i> <span data-ru="Контакты" data-kz="Байланыс" data-en="Contact">Контакты</span></div>
+  <h1 class="fade-up fade-up-delay-1" data-ru="Давайте <em>работать вместе</em>" data-kz="Бірге <em>жұмыс жасайық</em>" data-en="Let's <em>Work Together</em>">Давайте <em>работать вместе</em></h1>
+  <p class="fade-up fade-up-delay-2" data-ru="Открыты к сотрудничеству с горнодобывающими компаниями, исследовательскими институтами и инвесторами." data-kz="Тау-кен компанияларымен, ғылыми институттармен және инвесторлармен ынтымақтастыққа дайынбыз." data-en="Open to collaboration with mining companies, research institutions, and investors.">Открыты к сотрудничеству с горнодобывающими компаниями, исследовательскими институтами и инвесторами.</p>
+</div>
+
+<div class="section">
+  <div class="contact-box fade-up">
+    <div>
+      <h2 data-ru="Свяжитесь с нами" data-kz="Бізбен байланысыңыз" data-en="Get in Touch">Свяжитесь с нами</h2>
+      <p data-ru="Ответим в течение 24 часов. Готовы обсудить совместные исследования, технологическое сотрудничество или инвестиционные возможности." data-kz="24 сағат ішінде жауап береміз. Бірлескен зерттеулер, технологиялық ынтымақтастық немесе инвестициялық мүмкіндіктерді талқылауға дайынбыз." data-en="We respond within 24 hours. Ready to discuss joint research, technology cooperation, or investment opportunities.">Ответим в течение 24 часов. Готовы обсудить совместные исследования, технологическое сотрудничество или инвестиционные возможности.</p>
+      <div class="contact-detail"><i class="ti ti-mail"></i> office@tynys-h.kz</div>
+      <div class="contact-detail" style="margin-top:10px"><i class="ti ti-map-pin"></i> Алматы, Казахстан</div>
+      <div class="contact-detail" style="margin-top:10px"><i class="ti ti-building"></i> <span data-ru="Партнёр: КазНУ им. аль-Фараби" data-kz="Серіктес: ҚазҰУ" data-en="Partner: Al-Farabi KazNU">Партнёр: КазНУ им. аль-Фараби</span></div>
+    </div>
+    <div class="contact-form">
+      <input type="text" id="cf-name" data-ru="Ваше имя" data-kz="Атыңыз" data-en="Your name" placeholder="Ваше имя">
+      <input type="email" id="cf-email" placeholder="Email">
+      <input type="text" id="cf-org" data-ru="Организация (необязательно)" data-kz="Ұйым (міндетті емес)" data-en="Organization (optional)" placeholder="Организация (необязательно)">
+      <textarea id="cf-msg" data-ru="Сообщение" data-kz="Хабарлама" data-en="Message" placeholder="Сообщение"></textarea>
+      <button class="btn-primary" id="cf-btn" onclick="submitForm()" data-ru="Отправить" data-kz="Жіберу" data-en="Send">Отправить</button>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div>© 2026 Tynys-H.</div>
+  <div class="footer-links">
+    <a href="about.html">О компании</a>
+    <a href="research.html">Исследования</a>
+    <a href="contact.html">Контакты</a>
+  </div>
+  <div><span class="live-dot"></span>Алматы, Казахстан</div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Новости — Tynys-H</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .news-big { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 16px; margin-top: 2rem; }
+    .news-big .news-card { padding: 1.75rem; }
+    .news-big .news-card h3 { font-size: 16px; line-height: 1.45; margin-bottom: 10px; }
+    .news-big .news-card p { font-size: 13.5px; line-height: 1.7; }
+    .news-tag { display: inline-block; font-size: 11px; font-family: 'DM Mono', monospace; color: var(--green-dark); background: var(--green-bg); padding: 3px 9px; border-radius: var(--radius-pill); margin-bottom: 10px; }
+  </style>
+</head>
+<body class="page-enter">
+<nav class="nav">
+  <a class="nav-logo" href="index.html">Tynys<span>-H</span></a>
+  <div class="nav-links">
+    <a href="index.html" data-ru="Главная" data-kz="Басты бет" data-en="Home">Главная</a>
+    <a href="about.html" data-ru="О компании" data-kz="Компания туралы" data-en="About">О компании</a>
+    <a href="research.html" data-ru="Исследования" data-kz="Зерттеулер" data-en="Research">Исследования</a>
+    <a href="projects.html" data-ru="Проекты" data-kz="Жобалар" data-en="Projects">Проекты</a>
+    <a href="publications.html" data-ru="Публикации" data-kz="Жарияланымдар" data-en="Publications">Публикации</a>
+    <a href="news.html" data-ru="Новости" data-kz="Жаңалықтар" data-en="News">Новости</a>
+    <a href="contact.html" data-ru="Контакты" data-kz="Байланыс" data-en="Contact">Контакты</a>
+  </div>
+  <div class="nav-right">
+    <div class="lang-switcher">
+      <button class="lang-btn" data-lang="ru">RU</button>
+      <button class="lang-btn" data-lang="kz">KZ</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+    <a class="nav-cta" href="contact.html" data-ru="Написать нам" data-kz="Бізге жазу" data-en="Contact Us">Написать нам</a>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="badge fade-up"><i class="ti ti-news"></i> <span data-ru="Новости компании" data-kz="Компания жаңалықтары" data-en="Company News">Новости компании</span></div>
+  <h1 class="fade-up fade-up-delay-1" data-ru="Последние <em>события</em>" data-kz="Соңғы <em>оқиғалар</em>" data-en="Latest <em>Updates</em>">Последние <em>события</em></h1>
+  <p class="fade-up fade-up-delay-2" data-ru="Конференции, гранты, публикации и партнёрства." data-kz="Конференциялар, гранттар, жарияланымдар және серіктестіктер." data-en="Conferences, grants, publications and partnerships.">Конференции, гранты, публикации и партнёрства.</p>
+</div>
+
+<div class="section">
+  <div class="sec-label fade-up">2026</div>
+  <div class="news-big">
+    <div class="news-card fade-up">
+      <div class="news-date">Май 2026</div>
+      <div class="news-tag" data-ru="Конференция" data-kz="Конференция" data-en="Conference">Конференция</div>
+      <h3 data-ru="Участие в конференции «Горное дело — 2026»" data-kz="«Тау-кен ісі — 2026» конференциясына қатысу" data-en="Participation in Mining Conference 2026">Участие в конференции «Горное дело — 2026»</h3>
+      <p data-ru="Компания представила доклад о результатах пилотных испытаний технологии биосорбционного извлечения золота на Международной горной конференции в Алматы. Доклад вызвал интерес у представителей горнодобывающих компаний региона." data-kz="Компания Алматыдағы Халықаралық тау-кен конференциясында алтынды биосорбциялық алу технологиясының пилоттық сынақтарының нәтижелері туралы баяндама жасады." data-en="The company presented findings from pilot testing of gold biosorption recovery technology at the International Mining Conference in Almaty. The presentation attracted interest from regional mining companies.">Компания представила доклад о результатах пилотных испытаний технологии биосорбционного извлечения золота на Международной горной конференции в Алматы.</p>
+    </div>
+    <div class="news-card fade-up fade-up-delay-1">
+      <div class="news-date">Март 2026</div>
+      <div class="news-tag" data-ru="Партнёрство" data-kz="Серіктестік" data-en="Partnership">Партнёрство</div>
+      <h3 data-ru="Расширенное соглашение с КазНУ" data-kz="ҚазҰУ-мен кеңейтілген келісім" data-en="Expanded Agreement with KazNU">Расширенное соглашение с КазНУ</h3>
+      <p data-ru="Подписано расширенное соглашение о совместных научных исследованиях и подготовке кадров на базе Казахского национального университета им. аль-Фараби. Соглашение предусматривает совместное использование лабораторной базы." data-kz="ҚазҰУ-мен бірлескен ғылыми зерттеулер мен кадрлар даярлау туралы кеңейтілген келісімге қол қойылды." data-en="An expanded agreement on joint scientific research and personnel training was signed with Al-Farabi Kazakh National University. The agreement includes shared use of laboratory facilities.">Подписано расширенное соглашение о совместных научных исследованиях и подготовке кадров на базе КазНУ им. аль-Фараби.</p>
+    </div>
+    <div class="news-card fade-up fade-up-delay-2">
+      <div class="news-date">Январь 2026</div>
+      <div class="news-tag" data-ru="Грант" data-kz="Грант" data-en="Grant">Грант</div>
+      <h3 data-ru="Грант на исследование литиевых рассолов" data-kz="Литий тұздықтарын зерттеуге грант" data-en="Grant for Lithium Brine Research">Грант на исследование литиевых рассолов</h3>
+      <p data-ru="Получено финансирование от Министерства науки и высшего образования РК на проведение предпроектного исследования по извлечению лития из подземных рассолов Южного Казахстана." data-kz="ҚР Ғылым және жоғары білім министрлігінен Оңтүстік Қазақстанның жер асты тұздықтарынан литий алу бойынша алдын ала зерттеуге қаржыландыру алынды." data-en="Funding received from the Ministry of Science and Higher Education of Kazakhstan for a pre-project study on lithium recovery from underground brines of Southern Kazakhstan.">Получено финансирование от Министерства науки РК на предпроектное исследование по извлечению лития из подземных рассолов Южного Казахстана.</p>
+    </div>
+  </div>
+
+  <div class="sec-label fade-up" style="margin-top:3rem">2025</div>
+  <div class="news-grid">
+    <div class="news-card fade-up">
+      <div class="news-date">Октябрь 2025</div>
+      <div class="news-tag">Публикация</div>
+      <h3 data-ru="Статья в Hydrometallurgy (Elsevier)" data-en="Paper in Hydrometallurgy (Elsevier)" data-kz="Hydrometallurgy журналындағы мақала">Статья в Hydrometallurgy (Elsevier)</h3>
+      <p data-ru="Опубликована статья об экстракционном разделении молибдена и рения — первая публикация компании в международном журнале Q1." data-en="Published paper on Mo-Re extraction separation — the company's first Q1 international journal publication." data-kz="Молибден мен рений бөлінуі туралы мақала жарияланды — компанияның Q1 халықаралық журналдағы алғашқы жарияланымы.">Опубликована статья об экстракционном разделении Mo и Re — первая публикация в международном журнале Q1.</p>
+    </div>
+    <div class="news-card fade-up fade-up-delay-1">
+      <div class="news-date">Июнь 2025</div>
+      <div class="news-tag" data-ru="Проект" data-kz="Жоба" data-en="Project">Проект</div>
+      <h3 data-ru="Завершение проекта по молибденовым хвостам" data-kz="Молибден хвосттары жобасының аяқталуы" data-en="Completion of Molybdenum Tailings Project">Завершение проекта по молибденовым хвостам</h3>
+      <p data-ru="Успешно завершены пилотные испытания. Прирост извлечения молибдена составил 18%. Технология передана заказчику." data-kz="Пилоттық сынақтар сәтті аяқталды. Молибден алу өсімі 18% құрады." data-en="Pilot tests successfully completed. Molybdenum recovery increase of 18% achieved. Technology transferred to client.">Успешно завершены пилотные испытания. Прирост извлечения молибдена — 18%.</p>
+    </div>
+    <div class="news-card fade-up fade-up-delay-2">
+      <div class="news-date">Март 2025</div>
+      <div class="news-tag" data-ru="Патент" data-kz="Патент" data-en="Patent">Патент</div>
+      <h3 data-ru="Получен патент на биосорбент нового поколения" data-kz="Жаңа буын биосорбентіне патент алынды" data-en="Patent Granted for Next-Gen Biosorbent">Получен патент на биосорбент нового поколения</h3>
+      <p data-ru="Комитет по правам интеллектуальной собственности РК выдал патент на новый класс биополимерных сорбентов для извлечения золота." data-kz="ҚР зияткерлік меншік комитеті алтын алуға арналған биополимерлі сорбенттердің жаңа класына патент берді." data-en="The IP Committee of Kazakhstan granted a patent for a new class of biopolymer sorbents for gold recovery.">Комитет по правам интеллектуальной собственности РК выдал патент на новый класс биополимерных сорбентов.</p>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div>© 2026 Tynys-H.</div>
+  <div class="footer-links">
+    <a href="about.html">О компании</a>
+    <a href="research.html">Исследования</a>
+    <a href="contact.html">Контакты</a>
+  </div>
+  <div><span class="live-dot"></span>Алматы, Казахстан</div>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
