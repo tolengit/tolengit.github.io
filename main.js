@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
   // ── LANGUAGE SWITCHER ──────────────────────────────────
-  const savedLang = localStorage.getItem('lang') || 'ru';
+  const savedLang = localStorage.getItem('lang') || 'kz';
   applyLang(savedLang);
 
   document.querySelectorAll('.lang-btn').forEach(btn => {
