@@ -70,7 +70,7 @@
   </div>
 
   <div class="sec-label fade-up" style="margin-top:3rem">2025</div>
-  <div class="news-grid">
+  <div class="news-grid" id="news-container">
     <div class="news-card fade-up">
       <div class="news-date">Октябрь 2025</div>
       <div class="news-tag">Публикация</div>
@@ -101,6 +101,32 @@
   </div>
   <div><span class="live-dot"></span><span data-ru="Алматы, Казахстан" data-kz="Алматы, Қазақстан" data-en="Almaty, Kazakhstan">Алматы, Казахстан</span></div>
 </footer>
+  <script>
+const SPACE = 'mr431hckljjg';
+const TOKEN = 'R1U338rJGzUtPLavTsIl9oEhnCPumTlyApLnmko-UiI';
+
+async function loadNews() {
+  const res = await fetch(`https://cdn.contentful.com/spaces/${SPACE}/entries?content_type=news&order=-fields.date&access_token=${TOKEN}`);
+  const data = await res.json();
+  
+  const container = document.getElementById('news-container');
+  container.innerHTML = '';
+
+  data.items.forEach(item => {
+    const f = item.fields;
+    const date = f.date ? new Date(f.date).toLocaleDateString('ru-RU', {month:'long', year:'numeric'}) : '';
+    container.innerHTML += `
+      <div class="news-card fade-up">
+        <div class="news-date">${date}</div>
+        <div class="news-tag">${f.tag || ''}</div>
+        <h3>${f.title}</h3>
+        <p>${f.body || ''}</p>
+      </div>`;
+  });
+}
+
+loadNews();
+</script>
 <script src="main.js"></script>
 </body>
 </html>
